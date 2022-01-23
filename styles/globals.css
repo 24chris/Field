@@ -12,8 +12,25 @@ a {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; 
 } */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .bottom-up{
+    @apply flex items-center bg-gray-800 text-red-400
+            hover:bg-gray-300 hover:text-yellow-400
+            rounded-3xl hover:rotate-12
+            transition-all duration-300 ease-linear cursor-pointer;
+  }
+
+  .bottom-tooltip{
+    @apply absolute w-auto p-2 m-2 min-w-max left-14
+            rounded-md shadow-md
+            text-white bg-gray-700
+            text-xs font-bold
+            transition-all duration-100 scale-0 origin-top;
+  }
+}

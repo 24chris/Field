@@ -5,6 +5,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import Bottom from '../components/Bottom'
 
 
 
@@ -23,11 +24,19 @@ export default function Home() {
     // </div>
     <>
     <Navbar/>
+    <div className="w-64 shadow-md px-2 ml-3 py-2 pl-8 font-sans ">
+      We encourage you to watch the entire video
+      {/* <span className="shadow-md float-right">x</span> */}
+    </div>
+    <div className="w-64 shadow-md ml-3 px-2 mt-3 py-4 pl-8 font-sans ">
+      or read from the links below
+      {/* <span className="shadow-md float-right">x</span> */}
+    </div>
     <div className="flex flex-col content-center items-center ">
       <section className="text-gray-700 body-font">
-        <div className="pt-6">
-        <iframe width="714" 
-        height="402" 
+        <div className="pt-1">
+        <iframe width="400" 
+        height="202" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
         frameborder="0" 
@@ -35,13 +44,13 @@ export default function Home() {
         allowfullscreen>
          </iframe>
         </div>
-        <h2 className="pt-3 font-semibold mb-2">INTRO TO FIELD SIMPLIFIED</h2>
+        <h2 className="pt-1 font-semibold mb-2">INTRO TO FIELD SIMPLIFIED</h2>
       </section>
       <div className="container mx-auto shadow-sm">   
        <div className="flex flex-row space-x-4 justify-center">
           <div>
           <iframe width="150" 
-        height="100" 
+        height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
         frameborder="0" 
@@ -56,7 +65,7 @@ export default function Home() {
           </div>
           <div>
           <iframe width="150" 
-        height="100" 
+        height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
         frameborder="0" 
@@ -71,7 +80,7 @@ export default function Home() {
         </div>
           <div>
           <iframe width="150" 
-        height="100" 
+        height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
         frameborder="0" 
@@ -86,7 +95,7 @@ export default function Home() {
         </div>
           <div>
           <iframe width="150" 
-        height="100" 
+        height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
         frameborder="0" 
@@ -101,7 +110,7 @@ export default function Home() {
         </div>
           <div>
           <iframe width="150" 
-        height="100" 
+        height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
         frameborder="0" 
@@ -116,7 +125,7 @@ export default function Home() {
         </div>
           <div>
           <iframe width="150" 
-        height="100" 
+        height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
         frameborder="0" 
@@ -131,7 +140,7 @@ export default function Home() {
         </div>
           <div>
           <iframe width="150" 
-        height="100" 
+        height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
         frameborder="0" 
@@ -145,71 +154,10 @@ export default function Home() {
           </figcaption>
         </div>
         </div>
-      </div>
-      <div className="container mx-auto bg bg-gray-500 shadow-sm pt-5">
-        <div className="flex flex-row bg space-x-20 justify-start">
-        <div>
-          <button className="flex mx-auto px-8 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            Why field simplified
-          </button>
-        </div>
-        <div>
-          <button className="flex mx-auto px-8 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            About Internship
-          </button>
-        </div>
-        <div>
-          <button className="flex mx-auto px-8 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            About Supervision
-          </button>
-        </div>
-        <div>
-          <button className="flex mx-auto px-8 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            About Skills Training
-          </button>
-        </div>
-        <div>
-          <button className="flex mx-auto px-8 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            About Field Solutions
-          </button>
-        </div>
-        </div>
-      </div>
-      <div className="container mx-auto bg bg-gray-500 shadow-sm pt-5">
-        <div className="flex flex-row bg space-x-20 justify-start">
-        <div>
-          <button className="flex mx-auto px-10 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            Follow Us
-          </button>
-        </div>
-        <div>
-          <button className="flex mx-auto px-10 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-           Views
-          </button>
-        </div>
-        <div>
-          <button className="flex mx-auto px-10 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            Contact Us
-          </button>
-        </div>
-        <div>
-          <button className="flex mx-auto px-10 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            Pricing
-          </button>
-        </div>
-        <div>
-          <button className="flex mx-auto px-10 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            Demo
-          </button>
-        </div>
-        <div>
-          <button className="flex mx-auto px-10 text-black bg-gray-500 border-0 focus:outline-none hover:bg-red-200 rounded text-lg">
-            Partners
-          </button>
-        </div>
-        </div>
-      </div>
+      </div>    
     </div>
+    
+    <Bottom/>
     <Footer/>
     </>
     

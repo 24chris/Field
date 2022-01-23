@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Footer(){
     return(
-        <footer className={styles.footer}>
+        <footer className="">
         {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -16,7 +16,9 @@ export default function Footer(){
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a> */}
-        from The ICT Labs "Logo goes here!"
+        <div className="flex justify-center text-sm">from</div>
+        <span className="flex justify-center text-sm">The <span className="text-center text-red-500 mx-2">ICT</span> Labs</span>
+        
       </footer>
     );
 }
