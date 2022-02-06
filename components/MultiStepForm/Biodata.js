@@ -12,7 +12,13 @@ const Biodata = ({formData,setFormData}) => {
         <div class="flex flex-col sm:flex-row items-center justify-between my-4 w-full">
           <div class="flex flex-col w-full my-2">
             <label class="text-sm font-semibold text-gray-600 dark:text-white">University</label>
-            <input type="text" placeholder="university" value={formData.uni} name="uni" onChange={e => setFormData({...formData, uni:e.target.value})} class="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+            <input 
+            type="text" 
+            placeholder="university" 
+            value={formData.university} 
+            name="university" 
+            onChange={e => setFormData({...formData, university:e.target.value})} 
+            class="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
           </div>
         </div>
         <div class="flex flex-col sm:flex-row items-center justify-between my-4 w-full">

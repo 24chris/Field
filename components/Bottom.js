@@ -485,7 +485,6 @@ const Bottom = () =>{
         </Dialog>
       </Transition>
      
-      
       </div>
         </>
         

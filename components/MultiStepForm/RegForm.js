@@ -12,7 +12,7 @@ const RegForm = () => {
     const FormTitles = ['Biodata','CourseDetails','UniversityDetails','Pay'];
 
     const [formData,setFormData]= useState({
-        uni:"",
+        university:"",
         title:"",
         college:"",
         sdepart:"",
@@ -27,9 +27,8 @@ const RegForm = () => {
         stelno:"",
         inletter:"",
         inID:"",
-        // group:"",
-        // indi:"",
-        // con:"",
+        cat:"",
+        con:"",
      })
 
 
@@ -45,7 +44,7 @@ const RegForm = () => {
             return <UniversityDetails formData={formData} setFormData={setFormData}/>
         }
         else{
-            return <Pay/>
+            return <Pay formData={formData} setFormData={setFormData}/>
         }
     }
     const submitData  = async e =>{
@@ -61,6 +60,13 @@ const RegForm = () => {
         }catch(error){
           console.log(error)
         }
+      }
+      const sendEmail = async(e)=>{
+        e.preventDefault();
+        const results = await fetch('/api/email',{
+          method:'POST',
+          body:JSON.stringify({regno:regno})
+        })
       }
     
     return (

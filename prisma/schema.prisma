@@ -15,23 +15,26 @@ model User{
   username String
   email String 
   password String
+  choice String
 }
 
 model Student{
-  university String
-  title String
-  college String
-  department String
-  phoneNumber String
-  cField String
-  specCource String
-  depchoice String
-  yearOfStudy String
-  regNo String @unique
-  residence String
-  Guardian String
-  gnumber String
-  letterUrl String
-  uniID String
+university String
+title String
+college String
+sdepart String
+telno String
+cfield String
+specify String
+depart String
+yos String
+regno String@unique
+residence String
+guardname String
+stelno String
+inletter String
+inID String
+cat String
+con String
 
 }

@@ -4,14 +4,14 @@ import prisma from '../../lib/prisma'
 // Required fields in body: name, email
 export default async function handle(req, res) {
 
-  const { username, email, password } = req.body;
+  const { username, email, password,choice } = req.body;
 
     const user = await prisma.user.create({
       data: {
         username,
         email,
         password,
-        // choice:choice,
+        choice,
       },
     })
     res.json(user)
