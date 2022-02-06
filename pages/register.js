@@ -8,18 +8,14 @@ import Router from "next/router";
 
 
 
-const register = () => {
-  // const initialState = {name:'',email:'',password:'',checkbox:''}
-  // const [userData,setUserData] = useState(initialState)
-  // const { name, email,password,choice} = userData
+const Register = () => {
+  
 
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [choice,setChoice] = useState('')
   
-  // const[signup,setSignup] = useState()
-
      
     const submitData  = async e =>{
       e.preventDefault()
@@ -130,4 +126,4 @@ const register = () => {
      );
 }
  
-export default register;
+export default Register;
