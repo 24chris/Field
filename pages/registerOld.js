@@ -134,47 +134,47 @@ const register = () => {
             Use names in your ID
           </div>
           <form onSubmit={handleSubmit}>
-         <div class="form-container bg-white dark:bg-gray-700 rounded-md shadow-lg p-6 flex flex-col items-center max-w-xl mx-auto"></div>
-         <div class="form-container bg-white dark:bg-gray-700 rounded-md shadow-lg p-6  flex flex-col items-center max-w-xl mx-auto">
-            <div class="flex flex-col sm:flex-row items-center justify-between my-2 w-full">
-              {/* <div class="flex flex-col w-full my-2">
-                <label class="text-sm font-semibold text-gray-600 dark:text-white">First Name</label>
-                <input type="text" placeholder="Peter" class="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+         <div className="form-container bg-white dark:bg-gray-700 rounded-md shadow-lg p-6 flex flex-col items-center max-w-xl mx-auto"></div>
+         <div className="form-container bg-white dark:bg-gray-700 rounded-md shadow-lg p-6  flex flex-col items-center max-w-xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-between my-2 w-full">
+              {/* <div className="flex flex-col w-full my-2">
+                <label className="text-sm font-semibold text-gray-600 dark:text-white">First Name</label>
+                <input type="text" placeholder="Peter" className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
               </div>
-              <div class="flex flex-col w-full mx-8 my-2">
-                <label class="text-sm font-semibold text-gray-600 dark:text-white">Last Name</label>
-                <input type="text" value={} name="email" class="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+              <div className="flex flex-col w-full mx-8 my-2">
+                <label className="text-sm font-semibold text-gray-600 dark:text-white">Last Name</label>
+                <input type="text" value={} name="email" className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
               </div> */}
-              <div class="flex flex-col w-full my-2">
-                <label class="text-sm font-semibold text-gray-600 dark:text-white">Name</label>
-                <input type="text" value={name} name="name" onChange={handleChangeInput}  class="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+              <div className="flex flex-col w-full my-2">
+                <label className="text-sm font-semibold text-gray-600 dark:text-white">Name</label>
+                <input type="text" value={name} name="name" onChange={handleChangeInput}  className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
               </div>
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-between my-2 w-full">
-              <div class="flex flex-col w-full my-2">
-                <label class="text-sm font-semibold text-gray-600 dark:text-white">Email</label>
-                <input type="email" value={email} name="email" onChange={handleChangeInput} placeholder="peterasizu@gmail.com" class="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+            <div className="flex flex-col sm:flex-row items-center justify-between my-2 w-full">
+              <div className="flex flex-col w-full my-2">
+                <label className="text-sm font-semibold text-gray-600 dark:text-white">Email</label>
+                <input type="email" value={email} name="email" onChange={handleChangeInput} placeholder="peterasizu@gmail.com" className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
               </div>
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-between my-0 w-full">
-              <div class="flex flex-col w-full my-0">
-                <label class="text-sm font-semibold text-gray-600 dark:text-white">Password</label>
-                <input type="password" value={password} onChange={handleChangeInput}name="password" placeholder="" class="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+            <div className="flex flex-col sm:flex-row items-center justify-between my-0 w-full">
+              <div className="flex flex-col w-full my-0">
+                <label className="text-sm font-semibold text-gray-600 dark:text-white">Password</label>
+                <input type="password" value={password} onChange={handleChangeInput}name="password" placeholder="" className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
               </div>
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-between my-2 w-full">
-            <div class="w-full">
-              <label class="text-sm font-semibold text-gray-600 dark:text-white">Student</label>
-              <input class="flex flex-col mt-4"  onChange={handleChangeInput} name="choice" type="checkbox">
+            <div className="flex flex-col sm:flex-row items-center justify-between my-2 w-full">
+            <div className="w-full">
+              <label className="text-sm font-semibold text-gray-600 dark:text-white">Student</label>
+              <input className="flex flex-col mt-4"  onChange={handleChangeInput} name="choice" type="checkbox">
               </input>
             </div>
-            <div class="flex flex-col w-full mx-8 my-0">
-                <label class="text-sm font-semibold text-gray-600 dark:text-white">Non-student</label>
-                <input type="checkbox"  name="choice"  class="border-b py-2 mt-4 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+            <div className="flex flex-col w-full mx-8 my-0">
+                <label className="text-sm font-semibold text-gray-600 dark:text-white">Non-student</label>
+                <input type="checkbox"  name="choice"  className="border-b py-2 mt-4 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
               </div>
             </div>
-            <div class="fex flex-row w-full">
-              <button class="bg-red-500 to-grey-500 px-4 py-2 my-5 text-white rounded-md">Next</button>
+            <div className="fex flex-row w-full">
+              <button className="bg-red-500 to-grey-500 px-4 py-2 my-5 text-white rounded-md">Next</button>
             </div>
           </div>
           </form>
