@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import InAppBottom from "../components/InAppBottom";
 import SideBar from "../components/SideBar";
+import Link from 'next/link'
 
 export default function Modal(){
     const[open,setopen]=useState(true)
