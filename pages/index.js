@@ -39,9 +39,9 @@ export default function Home() {
         height="202" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+        allowFullScreen>
          </iframe>
         </div>
         <h2 className="pt-1 font-semibold mb-2">INTRO TO FIELD SIMPLIFIED</h2>
@@ -53,12 +53,12 @@ export default function Home() {
         height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+        allowFullScreen>
          </iframe>
-          <figcaption class="font-medium">
-            <div class="text-gray-500">
+          <figcaption className="font-medium">
+            <div className="text-gray-500">
               Why Simplified
            </div>
           </figcaption>
@@ -68,12 +68,12 @@ export default function Home() {
         height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+        allowFullScreen>
          </iframe>
-        <figcaption class="font-medium">
-            <div class="text-gray-500">
+        <figcaption className="font-medium">
+            <div className="text-gray-500">
               About Internship
            </div>
           </figcaption>
@@ -83,12 +83,12 @@ export default function Home() {
         height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+        allowFullScreen>
          </iframe>
-        <figcaption class="font-medium">
-            <div class="text-gray-500">
+        <figcaption className="font-medium">
+            <div className="text-gray-500">
               Other Programs
            </div>
           </figcaption>
@@ -98,12 +98,12 @@ export default function Home() {
         height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+        allowFullScreen>
          </iframe>
-        <figcaption class="font-medium">
-            <div class="text-gray-500">
+        <figcaption className="font-medium">
+            <div className="text-gray-500">
               About Supervision
            </div>
           </figcaption>
@@ -113,12 +113,12 @@ export default function Home() {
         height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+        allowFullScreen>
          </iframe>
-        <figcaption class="font-medium">
-            <div class="text-gray-500">
+        <figcaption className="font-medium">
+            <div className="text-gray-500">
               Fields Covered
            </div>
           </figcaption>
@@ -128,12 +128,12 @@ export default function Home() {
         height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+        allowFullScreen>
          </iframe>
-        <figcaption class="font-medium">
-            <div class="text-gray-500">
+        <figcaption className="font-medium">
+            <div className="text-gray-500">
               Need Help?
            </div>
           </figcaption>
@@ -143,12 +143,12 @@ export default function Home() {
         height="80" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+        allowFullScreen>
          </iframe>
-        <figcaption class="font-medium">
-            <div class="text-gray-500">
+        <figcaption className="font-medium">
+            <div className="text-gray-500">
               Demo
            </div>
           </figcaption>

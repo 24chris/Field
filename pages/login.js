@@ -28,7 +28,7 @@ const login = () => {
     
       <button className="w-full bg-red-500 py-2 rounded-md text-gray-50">Login</button>
       <div className="max-w-xl mx-auto">
-      <p className="text-sm mt-8 ml-8">Don't have an account? <a href="#" className="text-red-500">Register</a></p>
+      <p className="text-sm mt-8 ml-8">Dont have an account? <a href="#" className="text-red-500">Register</a></p>
     </div>
     </div>
   </div>

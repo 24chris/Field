@@ -13,7 +13,7 @@ import emailjs from 'emailjs-com'
 
 
 
-const register = () => {
+const Register = () => {
   const initialState = {name:'',email:'',password:'',checkbox:''}
   const [userData,setUserData] = useState(initialState)
   const { name, email,password,choice} = userData
