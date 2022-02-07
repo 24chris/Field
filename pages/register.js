@@ -8,14 +8,15 @@ import Router from "next/router";
 
 
 
-const Register = () => {
-  
+const register = () => {
 
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [choice,setChoice] = useState('')
   
+  // const[signup,setSignup] = useState()
+
      
     const submitData  = async e =>{
       e.preventDefault()
@@ -31,18 +32,7 @@ const Register = () => {
         console.log(error)
       }
     }
-    // const sendEmail = async(e)=>{
-    //   e.preventDefault();
-    //   const results = await fetch('/api/email',{
-    //     method:'POST',
-    //     body:JSON.stringify({email:email})
-    //   });
-    //   if(results.status==200){
-    //     console.log("success")
-    //   }else{
-    //     console.log("error")
-    //   }
-    // }
+    
     return ( 
         <>
          <Navbar/>
@@ -126,4 +116,4 @@ const Register = () => {
      );
 }
  
-export default Register;
+export default register;

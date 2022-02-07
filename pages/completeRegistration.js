@@ -3,7 +3,7 @@ import RegForm from '../components/MultiStepForm/RegForm'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-const completeRegistration = () => {
+const completeregistration = () => {
     return (
         <div>
             <Navbar/>
@@ -13,4 +13,4 @@ const completeRegistration = () => {
     )
 }
 
-export default completeRegistration
+export default completeregistration

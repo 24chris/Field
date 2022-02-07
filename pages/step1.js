@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import InAppBottom from "../components/InAppBottom";
 import SideBar from "../components/SideBar";
-import Link from 'next/link'
 
 export default function Modal(){
     const[open,setopen]=useState(true)
@@ -37,7 +36,7 @@ export default function Modal(){
                                 </div>
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                     <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-gray-900">
-                                    <Link href="/completeRegistration">Click here to complete registration</Link> 
+                                    <a href="/completeRegistration">Click here to complete registration</a> 
                                     </Dialog.Title>
                                     <div className="mt-2">
                                         <p className="text-sm text-gray-500">
