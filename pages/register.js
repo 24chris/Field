@@ -2,13 +2,12 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Link from 'next/link'
 import React,{ useState } from "react";
-import emailjs from 'emailjs-com'
 // import {PrismaClient} from '@prisma/client'
 import Router from "next/router";
 
 
 
-export default function register() {
+export default function Register() {
 
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
