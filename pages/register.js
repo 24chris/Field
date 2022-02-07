@@ -8,7 +8,7 @@ import Router from "next/router";
 
 
 
-const register = () => {
+export default function register() {
 
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
@@ -17,7 +17,7 @@ const register = () => {
   
   // const[signup,setSignup] = useState()
 
-     
+
     const submitData  = async e =>{
       e.preventDefault()
       try{
@@ -32,7 +32,7 @@ const register = () => {
         console.log(error)
       }
     }
-    
+  
     return ( 
         <>
          <Navbar/>
@@ -116,4 +116,4 @@ const register = () => {
      );
 }
  
-export default register;
+// export default register;
