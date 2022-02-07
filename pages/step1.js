@@ -10,6 +10,8 @@ import Link from 'next/link'
 export default function Modal(){
     const[open,setopen]=useState(true)
 
+    const[cll,setCll]=useState(false)
+
     const cancelButtonRef = useRef(null)
 
     return(
@@ -17,7 +19,7 @@ export default function Modal(){
         <Navbar/>
         <div className="">
         <Transition.Root show={open} as={Fragment}>
-            <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" initialFocus={cancelButtonRef} onClose={setopen}>
+            <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" initialFocus={cancelButtonRef} onClose={setCll}>
                 <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm: p-0">
                     <Transition.Child
                     as={Fragment}
@@ -37,7 +39,7 @@ export default function Modal(){
                                 </div>
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                     <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-gray-900">
-                                    <Link href="/completeRegistration">Click here to complete registration</Link> 
+                                    <Link href="/completeregistration">Click here to complete registration</Link> 
                                     </Dialog.Title>
                                     <div className="mt-2">
                                         <p className="text-sm text-gray-500">

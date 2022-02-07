@@ -58,6 +58,7 @@ export default function Register() {
                 value={username} 
                 name="username" 
                 onChange={e => setUsername(e.target.value)}  
+                required={true}
                 className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
               </div>
             </div>
@@ -67,7 +68,8 @@ export default function Register() {
                 <input type="email" 
                 value={email} 
                 name="email" 
-                onChange={e => setEmail(e.target.value)} 
+                onChange={e => setEmail(e.target.value)}
+                required={true} 
                 placeholder="peterasizu@gmail.com" 
                 className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
               </div>
@@ -78,6 +80,7 @@ export default function Register() {
                 <input type="password" 
                 value={password} 
                 onChange={e => setPassword(e.target.value)}
+                required={true}
                 name="password" 
                 placeholder="" 
                 className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
@@ -89,6 +92,7 @@ export default function Register() {
                 <input type="radio" 
                 value="student"
                 onChange={e => {setChoice(e.target.value)}}
+                required={true}
                 checked={choice==="student"}
                 placeholder="" 
                 className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
@@ -99,6 +103,7 @@ export default function Register() {
                 value="nonStudent"
                 checked={choice==="nonStudent"}
                 onChange={e => {setChoice(e.target.value)}} 
+                required={true}
                 placeholder="" 
                 className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
               </div>

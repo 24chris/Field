@@ -18,6 +18,7 @@ const universitydetails = ({formData,setFormData}) => {
       value={formData.residence} 
       name="reidence" 
       onChange={e => setFormData({...formData, residence:e.target.value})}
+      required={true}
        className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
     </div>
   </div>
@@ -30,6 +31,7 @@ const universitydetails = ({formData,setFormData}) => {
       value={formData.guardname} 
       name="guardname" 
       onChange={e => setFormData({...formData, guardname:e.target.value})} 
+      required={true}
       className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
     </div>
     <div className="flex flex-col w-full mx-8 my-2">
@@ -40,6 +42,7 @@ const universitydetails = ({formData,setFormData}) => {
       value={formData.stelno} 
       name="stelno" 
       onChange={e => setFormData({...formData, stelno:e.target.value})} 
+      required={true}
       className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
     </div>
   </div>
@@ -52,6 +55,7 @@ const universitydetails = ({formData,setFormData}) => {
       value={formData.inletter} 
       name="inletter" 
       onChange={e => setFormData({...formData, inletter:e.target.value})}
+      required={true}
       className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
     </div>
   </div>
@@ -64,6 +68,7 @@ const universitydetails = ({formData,setFormData}) => {
       value={formData.inID} 
       name="inID" 
       onChange={e => setFormData({...formData, inID:e.target.value})} 
+      required={true}
       className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
     </div>
   </div>

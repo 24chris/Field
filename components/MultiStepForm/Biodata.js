@@ -17,6 +17,7 @@ const Biodata = ({formData,setFormData}) => {
             placeholder="university" 
             value={formData.university} 
             name="university" 
+            required={true}
             onChange={e => setFormData({...formData, university:e.target.value})} 
             className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
           </div>
@@ -24,25 +25,31 @@ const Biodata = ({formData,setFormData}) => {
         <div className="flex flex-col sm:flex-row items-center justify-between my-4 w-full">
           <div className="flex flex-col w-full my-2">
             <label className="text-sm font-semibold text-gray-600 dark:text-white">Title of person who signed your internship letter</label>
-            <input type="text" placeholder="Title of person who signed your internship letter" value={formData.title} name="title" onChange={e => setFormData({...formData, title:e.target.value})} className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+            <input type="text" 
+            placeholder="Title of person who signed your internship letter" 
+            value={formData.title} 
+            name="title" 
+            required={true}
+            onChange={e => setFormData({...formData, title:e.target.value})} 
+            className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-between my-4 w-full">
           <div className="flex flex-col w-full my-2">
             <label className="text-sm font-semibold text-gray-600 dark:text-white">College/School/Faculty</label>
-            <input type="text" placeholder="College/School/Faculty" value={formData.college} name="college" onChange={e => setFormData({...formData, college:e.target.value})} className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+            <input type="text" placeholder="College/School/Faculty" value={formData.college} name="college" required={true} onChange={e => setFormData({...formData, college:e.target.value})} className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-between my-4 w-full">
           <div className="flex flex-col w-full my-2">
             <label className="text-sm font-semibold text-gray-600 dark:text-white">Department</label>
-            <input type="text" placeholder="Department" value={formData.sdepart} name="sdepart" onChange={e => setFormData({...formData, sdepart:e.target.value})} className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+            <input type="text" placeholder="Department" value={formData.sdepart} name="sdepart" required={true} onChange={e => setFormData({...formData, sdepart:e.target.value})} className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-between my-4 w-full">
           <div className="flex flex-col w-full my-2">
             <label className="text-sm font-semibold text-gray-600 dark:text-white">Phone Number</label>
-            <input type="text" placeholder="phone number" value={formData.telno} name="telno" onChange={e => setFormData({...formData, telno:e.target.value})} className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
+            <input type="text" placeholder="phone number" value={formData.telno} name="telno" required={true} onChange={e => setFormData({...formData, telno:e.target.value})} className="border-b py-2 bg-white dark:bg-gray-700 focus:outline-none focus:ring-2 rounded-sm dark:placeholder-gray-500 text-gray-700 dark:text-gray-50" />
           </div>
         </div>
         

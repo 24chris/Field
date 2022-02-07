@@ -34,9 +34,9 @@ export default function Home() {
     </div>
     <div className="flex flex-col content-center items-center ">
       <section className="text-gray-700 body-font">
-        <div className="pt-1">
+        <div className="pt-0">
         <iframe width="400" 
-        height="202" 
+        height="180" 
         src="https://www.youtube.com/embed/tyn3ydrh9Rk" 
         title="YouTube video player" 
         frameBorder="0" 
@@ -44,7 +44,7 @@ export default function Home() {
         allowFullScreen>
          </iframe>
         </div>
-        <h2 className="pt-1 font-semibold mb-2">INTRO TO FIELD SIMPLIFIED</h2>
+        <h2 className="pt-0 font-semibold mb-2">INTRO TO FIELD SIMPLIFIED</h2>
       </section>
       <div className="container mx-auto shadow-sm">   
        <div className="flex flex-row space-x-4 justify-center">
