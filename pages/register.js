@@ -21,7 +21,7 @@ export default function Register() {
       e.preventDefault()
       try{
         const body = {username,email,password,choice}
-        await fetch('http://localhost:3000/api/user',{
+        await fetch('/api/user',{
           method:'POST',
           headers:{'Content-Type':'application/json'},
           body:JSON.stringify(body)
