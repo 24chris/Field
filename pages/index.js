@@ -6,6 +6,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Bottom from '../components/Bottom'
+import Bottom2 from '../components/Bottom2'
 
 
 
@@ -157,7 +158,7 @@ export default function Home() {
       </div>    
     </div>
     
-    <Bottom/>
+    <Bottom2/>
     <Footer/>
     </>
     
