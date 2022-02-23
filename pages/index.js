@@ -150,7 +150,7 @@ export default function Home() {
          </iframe>
         <figcaption className="font-medium">
             <div className="text-gray-500">
-              Demo
+              Demos
            </div>
           </figcaption>
         </div>
