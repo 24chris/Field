@@ -1,26 +1,27 @@
 import { Fragment,useRef,useState } from "react";
 import { Dialog,Transition } from "@headlessui/react";
 import {ExclamationIcon} from '@heroicons/react/outline';
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 import Footer from '../components/Footer'
 import InAppBottom from "../components/InAppBottom";
 import SideBar from "../components/SideBar";
 import Link from 'next/link'
-// import {useSession} from 'next-auth/client'
 
 export default function Modal(){
     const[open,setopen]=useState(true)
 
-    const[cll,setCll]=useState(false)
+    // const[cll,setCll]=useState(false)
 
     const cancelButtonRef = useRef(null)
 
+    // const [session, loading] = useSession();
+    
     return(
         <>
-        <Navbar/>
+        <Header/>
         <div className="">
         <Transition.Root show={open} as={Fragment}>
-            <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" initialFocus={cancelButtonRef} onClose={setCll}>
+            <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" initialFocus={cancelButtonRef} onClose={setopen}>
                 <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm: p-0">
                     <Transition.Child
                     as={Fragment}
@@ -30,7 +31,7 @@ export default function Modal(){
                     leave="ease-in duration-200"
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0">
-                    <Dialog.Overlay className="fixed inset-x-0 inset-y-9 mt-10 bg-gray-500 bg-opacity-75 transition-opacity"/>
+                    <Dialog.Overlay className="fixed inset-x-0 inset-y-9 mt-5 bg-gray-500 bg-opacity-75 transition-opacity"/>
                     </Transition.Child>
                     <div className="inline-block absolute top-12 right-3 align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm::align-middle sm:max-w-lg sm:w-full">
                         <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">

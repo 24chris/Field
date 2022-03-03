@@ -1,97 +1,46 @@
-// import NextAuth from "next-auth";
-// import CredentialsProvider from "next-auth/providers/credentials";
-
-// export default NextAuth({
-//     providers:[
-//         CredentialsProvider({
-//             name: "Custom Provider",
-//             Credentials:{
-//                 username:{label:"Email",type:"text",placeholder:"peterazisu@gmail.com"},
-//                 password:{label:"Password", type:"password"}
-//             },
-//             async authorize(credentials){
-//                 const user = {name:"Peter Asizu", email:"peterasizu@gmail.com"}
-//                 // return user;
-                
-//                 if (user) {
-//                     // Any object returned will be saved in `user` property of the JWT
-//                     return user
-//                   } else {
-                    // If you return null or false then the credentials will be rejected
-                    // return null
-                    // You can also Reject this callback with an Error or with a URL:
-                    // throw new Error('error message') // Redirect to error page
-                    // throw '/path/to/redirect'        // Redirect to a URL
-    //               }
-    //         }
-    //     })
-    // ],
-    // session:{
-    //     jwt:true,
-    //     pages:{
-    //         signIn:'/logins'
-    //     }
-    // }
-// })
-
-// export default (req, res) =>NextAuth(req,res,options);
-
 import NextAuth from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials";
+import { PrismaAdapter } from "@next-auth/prisma-adapter"
+import { PrismaClient } from "@prisma/client"
+import EmailProvider from "next-auth/providers/email";
+
+
+const prisma = new PrismaClient()
 
 export default NextAuth({
+    adapter:PrismaAdapter(prisma),
     providers:[
-        CredentialsProvider({
-            name: "credentials",
-            credentials:{
-                username:{label:"Email",type:"text",placeholder:"peterazisu@gmail.com"},
-                password:{label:"Password", type:"password"}
+        EmailProvider({
+            server: {
+              host: process.env.EMAIL_SERVER_HOST,
+              port: process.env.EMAIL_SERVER_PORT,
+              auth: {
+                user: process.env.EMAIL_SERVER_USER,
+                pass: process.env.EMAIL_SERVER_PASSWORD
+              }
             },
-            authorize: (credentials)=>{
-                //database look up
-                if(
-                    credentials.email ==="peterasizu@gmail.com"&&
-                    credentials.password =="test"
-                ){
-                    return{
-                        id:2,
-                        name:"Peter",
-                        email:"peterasizu@gmail.com"
-                    };
-                }
-                //login failed
-                return null;
-            }
-        })
+            from: process.env.EMAIL_FROM
+          }),
     ],
-    callbacks:{
-        jwt:({token,user})=>{
-            if(user){
-                token.id = user.id;
-            }
-            return token;
+    callbacks: {
+        async signIn({ user, account, profile, email, credentials }) {
+          return true
         },
-        session:({session,token})=>{
-            if(token){
-                session.id = token.id;
-            }
-            return session
+        async redirect({ url, baseUrl }) {
+          return '/step1'
+        },
+        async session({ session, user, token }) {
+          return session
+        },
+        async jwt({ token, user, account, profile, isNewUser }) {
+          return token
         },
     },
-    secret:"test",
-    jwt:{
-        secret:"test",
-        encryption:true,
-    },
-    pages:{
-        signIn:"/login"
-    }
-    // session:{
-    //     jwt:true,
-    //     pages:{
-    //         signIn:'/logins'
-    //     }
-    // }
+  pages: {
+    // signIn: '/auth/signin',
+    signOut: '/',
+    // error: '/auth/error', // Error code passed in query string as ?error=
+    // verifyRequest: '/auth/verify-request', // (used for check email message)
+    // newUser: '/auth/new-user' // New users will be directed here on first sign in (leave the property out if not of interest)
+  },    
+    database: process.env.DATABASE_URL
 })
-
-// export default (req, res) =>NextAuth(req,res,options);

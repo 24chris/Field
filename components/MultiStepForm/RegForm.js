@@ -83,7 +83,7 @@ const RegForm = () => {
 
             onClick={()=>{
                 if(page == FormTitles.length-1){
-                    alert("Form submitted")
+                    // alert("Form submitted")
                     console.log(formData)
                     submitData()
                 }else

@@ -53,23 +53,31 @@
 //     )
 // }
 
-import { useSession, signIn, signOut } from "next-auth/react"
+        import { useSession, signIn, signOut } from "next-auth/react"
 
-export default function Header() {
-  const { data: session } = useSession()
-  
-  if (session) {
-    return (
-      <>
-        Signed in as {session.user.name} <br />
-        <button onClick={() => signOut()}>Sign out</button>
-      </>
-    )
-  }
-  return (
-    <>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
-    </>
-  )
-}
+        export default function Header() {
+          const { data: session } = useSession()
+          
+
+          
+          if (session) {
+            return (
+              <>
+              <div className="float-right text-red-700 text-xl">
+                {session.user.email}|
+                <button onClick={() => signOut({ callbackUrl: 'http://localhost:3000/' })}>Sign out</button>
+                </div>
+              </>
+            )
+          }
+          return (
+            <>
+            <div>
+              Not signed in <br />
+              <button onClick={() => signIn()}>Sign in</button>
+              </div>
+            </>
+          )
+        }
+
+

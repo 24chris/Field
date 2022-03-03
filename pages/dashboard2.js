@@ -1,7 +1,7 @@
 import { getSession } from 'next-auth/react'
 import React from 'react'
 import Footer from '../components/Footer'
-import InAppBottom from '../components/InAppBottom'
+import NonInAppBottom from '../components/NonInAppBottom'
 import Navbar from '../components/Navbar'
 import SideBar from '../components/SideBar'
 
@@ -15,7 +15,7 @@ const dashboard = ({session}) => {
                     Video goes here
                 </div>
             </div> */}
-            <InAppBottom/>
+            <NonInAppBottom/>
             <Footer/>
         </div>
     )
